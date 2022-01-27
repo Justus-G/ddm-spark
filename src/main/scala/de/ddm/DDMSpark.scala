@@ -60,13 +60,13 @@ object DDMSpark extends App {
     // Spark Tutorial
     //------------------------------------------------------------------------------------------------------------------
 
-    Tutorial.execute(spark)
+    //Tutorial.execute(spark)
 
     //------------------------------------------------------------------------------------------------------------------
     // Longest Common Substring Search
     //------------------------------------------------------------------------------------------------------------------
 
-    time {LongestCommonSubstring.discoverLCSs("students2", spark)}
+    //time {LongestCommonSubstring.discoverLCSs("students2", spark)}
 
     //------------------------------------------------------------------------------------------------------------------
     // Inclusion Dependency Discovery (Homework)
@@ -79,6 +79,7 @@ object DDMSpark extends App {
       } else {
         List[String]()
       }
+      //List[String]("data/TPCH/tpch_region.csv", "data/TPCH/tpch_nation.csv")
     }
 
     time {Sindy.discoverINDs(getFiles(path.toString), spark)}
